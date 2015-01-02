@@ -41,21 +41,5 @@ function string_contains( $string, $substring ) {
 <body>
 	<span><?php echo is_it_snowing(); ?></span>
 	<a href="http://bradparbs.com" class="credits">a brad parbs thing</a>
-	<!-- Piwik -->
-	<script type="text/javascript">
-	  var _paq = _paq || [];
-	  _paq.push(['trackPageView']);
-	  _paq.push(['enableLinkTracking']);
-	  (function() {
-	    var u="//stats.parbs.me/";
-	    _paq.push(['setTrackerUrl', u+'piwik.php']);
-	    _paq.push(['setSiteId', 6]);
-	    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-	    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-	  })();
-	</script>
-	<noscript><p><img src="//stats.parbs.me/piwik.php?idsite=6" style="border:0;" alt="" /></p></noscript>
-	<!-- End Piwik Code -->
-
 </body>
 </html>
