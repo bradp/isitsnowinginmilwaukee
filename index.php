@@ -122,27 +122,27 @@ function is_it_snowing() {
 
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:site" content="@bradparbs">
-	<meta name="twitter:creator" content="@individual_account">
+	<meta name="twitter:creator" content="@bradparbs">
 	<meta name="twitter:url" content="https://isitsnowinginmilwaukee.com">
 	<meta name="twitter:title" content="Is it snowing in Milwaukee?">
 	<meta name="twitter:description" content="Easily check if it is snowing in Milwaukee, WI.">
 	<meta name="twitter:image" content="http://isitsnowinginmilwaukee.com/icon.png">
 
 	<style>
-		span {
+		body {
 			font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 			font-weight: 300;
 			font-size: 15em;
+		}
+		span {
 			text-align: center;
 			display: block;
 		}
 		a {
-			font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-			font-weight: 300;
 			position: absolute;
 			right: 0;
 			bottom: 0;
-			font: .75em;
+			font-size: .75em;
 		}
 	</style>
 </head>
