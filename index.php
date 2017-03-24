@@ -142,7 +142,7 @@ function is_it_snowing() {
 			position: absolute;
 			right: 0;
 			bottom: 0;
-			font-size: .75em;
+			font-size: .07em;
 		}
 	</style>
 </head>
