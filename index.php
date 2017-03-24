@@ -149,5 +149,6 @@ function is_it_snowing() {
 <body>
 	<span><?php echo is_it_snowing(); ?></span>
 	<a href="http://bradparbs.com" class="credits">a brad parbs thing</a>
+	<!-- https://github.com/bradp/isitsnowinginmilwaukee -->
 </body>
 </html>
