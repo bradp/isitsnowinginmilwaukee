@@ -129,26 +129,39 @@ function is_it_snowing() {
 	<meta name="twitter:image" content="http://isitsnowinginmilwaukee.com/icon.png">
 
 	<style>
-		body {
+		html, body {
 			font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-			font-weight: 300;
-			font-size: 15em;
+  			margin: 0;
+  			padding: 0;
+  			background: #f2f2f2;
 		}
+
 		span {
-			text-align: center;
-			display: block;
+  			margin: 0;
+  			text-align: center;
+  			font-size: 60px;
 		}
+
+		div {
+  			display: flex;
+  			justify-content: center;
+  			align-items: center;
+  			margin-top: 10em;
+		}
+
 		a {
 			position: absolute;
 			right: 0;
 			bottom: 0;
-			font-size: .07em;
+			color: grey;
+   			text-decoration: none;
+		    font-size: 1em;
+		    padding: 1em;
 		}
 	</style>
 </head>
 <body>
-	<span><?php echo is_it_snowing(); ?></span>
+	<div><span><?php echo is_it_snowing(); ?></span></div>
 	<a href="http://bradparbs.com" class="credits">a brad parbs thing</a>
 	<!-- https://github.com/bradp/isitsnowinginmilwaukee -->
 </body>
-</html>
