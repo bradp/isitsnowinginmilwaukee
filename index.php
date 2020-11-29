@@ -1,17 +1,30 @@
 <?php
 
+/**
+ * Get a random value from an array.
+ *
+ * @param array $choices
+ *
+ * @return mixed Value of random array key.
+ */
 function get_random( $choices ) {
-		return $choices[ array_rand( $choices, 1 ) ];
+	return $choices[ array_rand( $choices, 1 ) ];
 }
 
+/**
+ * Return a text string depending on weather or not it is snowing.
+ *
+ * @return string Yeah/Naw
+ */
 function is_it_snowing() {
-	$weather = json_decode( file_get_contents( 'https://api.openweathermap.org/data/2.5/weather?q=milwaukee&units=imperial&APPID=14067ca47d30fb0bcb278f67509d646d' ), true );
+	$app_id  = file_get_contents( '../.env' );
+	$weather = json_decode( file_get_contents( 'https://api.openweathermap.org/data/2.5/weather?q=milwaukee&units=imperial&APPID=' . $app_id ), true );
 
 	if ( isset( $weather['snow'] ) ) {
-		return '<div>' . get_random( [ 'Yup.', 'Yeah.', 'Yah.', 'Yes.' ] ) . '<p>Looks like some ' . lcfirst( $weather['weather']['description'] ) . '</div>';
+		return get_random( [ 'Yup.', 'Yeah.', 'Yah.', 'Yes.' ] ) . '<p>Looks like some ' . lcfirst( $weather['weather']['description'] );
 	}
 
-	return '<div>' . get_random( [ 'Nope.', 'No.', 'Naw.' ] ) . '</div>';
+	return get_random( [ 'Nope.', 'No.', 'Naw.' ] );
 }
 ?>
 <!DOCTYPE html>
@@ -79,7 +92,7 @@ function is_it_snowing() {
 	</style>
 </head>
 <body>
-	<main><?php echo is_it_snowing(); ?><main>
+	<main><div><?php echo is_it_snowing(); ?></div><main>
 	<a href="http://bradparbs.com" class="credits">a brad parbs thing</a>
 	<!-- https://github.com/bradp/isitsnowinginmilwaukee -->
 </body>
