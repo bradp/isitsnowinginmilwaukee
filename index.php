@@ -17,8 +17,8 @@ function get_random( $choices ) {
  * @return string Yeah/Naw
  */
 function is_it_snowing() {
-	$app_id  = file_get_contents( '../.env' );
-	$weather = json_decode( file_get_contents( 'https://api.openweathermap.org/data/2.5/weather?q=milwaukee&units=imperial&APPID=' . $app_id ), true );
+	$data = @file_get_contents( 'https://api.openweathermap.org/data/2.5/weather?q=milwaukee&units=imperial&APPID=' . getenv( 'OPENWEATHER_API_KEY' ) );
+	$weather = json_decode( $data, true );
 
 	if ( isset( $weather['snow'] ) ) {
 		return get_random( [ 'Yup.', 'Yeah.', 'Yah.', 'Yes.' ] ) . '<p>Looks like some ' . lcfirst( $weather['weather']['description'] );
