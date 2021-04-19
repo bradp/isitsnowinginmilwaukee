@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  web:
+    image: php:7.4-apache
+    container_name: snowing
+    ports:
+     - "3506:80"
+    volumes:
+      - ./:/var/www/html/
+    restart: unless-stopped
+    environment:
+      - OPENWEATHER_API_KEY=

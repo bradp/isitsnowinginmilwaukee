@@ -6,8 +6,3 @@
 Easily see if it is snowing in Milwaukee or not!
 
 If you want to use for your own project, grab an API key from https://openweathermap.org/api and export it as `OPENWEATHER_API_KEY`
-
-
-dockertime:
-
-`docker run --name snowing -p 3506:80 --env OPENWEATHER_API_KEY=xxx -v "$PWD":/var/www/html/ php:7.4-apache`
