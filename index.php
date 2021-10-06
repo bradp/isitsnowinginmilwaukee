@@ -55,11 +55,11 @@ function is_it_snowing() {
 	<meta name="twitter:description" content="Easily check if it is snowing in Milwaukee, WI.">
 	<meta name="twitter:image" content="https://isitsnowinginmilwaukee.com/icon.png">
 
-	<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/icons/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/icons/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/icons/favicon-16x16.png">
-	<link rel="manifest" href="/assets/images/icons/site.webmanifest">
-	<link rel="mask-icon" href="/assets/images/icons/safari-pinned-tab.svg" color="#4dc0db">
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+	<link rel="manifest" href="site.webmanifest">
+	<link rel="mask-icon" href="safari-pinned-tab.svg" color="#4dc0db">
 	<meta name="msapplication-TileColor" content="#4dc0db">
 	<meta name="theme-color" content="#4dc0db">
 
