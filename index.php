@@ -37,8 +37,6 @@ function is_it_snowing() {
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<link rel="shortcut icon" href="icon.png">
-
 	<meta name="description" content="Easily check if it is snowing in Milwaukee, WI.">
 	<meta name="generator" content="isitsnowinginmilwaukee">
 	<meta property="og:url" content="https://isitsnowinginmilwaukee.com">
@@ -47,7 +45,7 @@ function is_it_snowing() {
 	<meta property="og:description" content="Easily check if it is snowing in Milwaukee, WI.">
 	<meta property="og:site_name" content="Is it snowing in Milwaukee?">
 	<meta property="og:locale" content="en_US">
-	<meta property="og:image" content="http://isitsnowinginmilwaukee.com/icon.png">
+	<meta property="og:image" content="https://isitsnowinginmilwaukee.com/icon.png">
 
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:site" content="@bradparbs">
@@ -55,7 +53,15 @@ function is_it_snowing() {
 	<meta name="twitter:url" content="https://isitsnowinginmilwaukee.com">
 	<meta name="twitter:title" content="Is it snowing in Milwaukee?">
 	<meta name="twitter:description" content="Easily check if it is snowing in Milwaukee, WI.">
-	<meta name="twitter:image" content="http://isitsnowinginmilwaukee.com/icon.png">
+	<meta name="twitter:image" content="https://isitsnowinginmilwaukee.com/icon.png">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/icons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/icons/favicon-16x16.png">
+	<link rel="manifest" href="/assets/images/icons/site.webmanifest">
+	<link rel="mask-icon" href="/assets/images/icons/safari-pinned-tab.svg" color="#4dc0db">
+	<meta name="msapplication-TileColor" content="#4dc0db">
+	<meta name="theme-color" content="#4dc0db">
 
 	<style>
 		html, body {
@@ -93,6 +99,6 @@ function is_it_snowing() {
 </head>
 <body>
 	<main><div><?php echo is_it_snowing(); ?></div><main>
-	<a href="http://bradparbs.com" class="credits">a brad parbs thing</a>
+	<a href="https://bradparbs.com" class="credits">a brad parbs thing</a>
 	<!-- https://github.com/bradp/isitsnowinginmilwaukee -->
 </body>
